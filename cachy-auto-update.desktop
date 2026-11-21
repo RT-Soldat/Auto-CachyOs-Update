@@ -2,7 +2,7 @@
 Type=Application
 Name=Cachy Auto Update
 Comment=Actualiza CachyOS aceptando confirmaciones habituales sin reiniciar
-Exec=konsole -e cachy-auto-update.sh
+Exec=konsole -e bash -c "exec bash -- \\"\\$(dirname -- \\"\\$(readlink -f -- \\"\\$1\\")\\")/cachy-auto-update.sh\\"" bash %k
 Icon=cachy-update-blue
 Terminal=false
 Categories=System;

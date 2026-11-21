@@ -7,17 +7,17 @@ elimina huérfanos, limpia cachés y reinicia servicios. No reinicia el equipo.
 **Requisitos:** CachyOS con `cachy-update` 4.4.x, `sudo` y `paru`;
 `npm` y Node.js para los CLIs; Konsole para el lanzador. Flatpak y pip son opcionales.
 
-## Instalación
+## Uso
 
 ```bash
 git clone https://github.com/RT-Soldat/Auto-CachyOs-Update.git
 cd Auto-CachyOs-Update
-bash install.sh
+./cachy-auto-update.sh
 ```
 
-Abre **Cachy Auto Update** desde el menú de aplicaciones o ejecuta
-`./cachy-auto-update.sh`. Añade `--devel` para revisar paquetes `-git` del AUR.
-La instalación es por usuario y no requiere sudo.
+No requiere instalación. También puedes abrir `cachy-auto-update.desktop`
+desde la carpeta del proyecto. Añade `--devel` al script para revisar paquetes
+`-git` del AUR.
 
 Registros: `~/.local/state/cachy-auto-update/logs/` (conserva los últimos dos).
 
